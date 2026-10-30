@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EVAL-01",
+    "category": "technical_comparison",
+    "query": "Compare the top three open-source vector databases for a startup building RAG products.",
+    "expected_behavior": "Identifies 3 major open-source vector databases (e.g. Qdrant, Chroma, Milvus/Weaviate), provides comparison table, cites external sources with [S#], and recommends trade-offs."
+  },
+  {
+    "id": "EVAL-02",
+    "category": "company_market_research",
+    "query": "Find five Indian B2B SaaS startups in HR technology and summarize their positioning.",
+    "expected_behavior": "Discovers Indian HR tech SaaS companies (e.g., Darwinbox, Keka, ZingHR, greytHR, Pocket HRMS), provides value propositions and positioning, and grounds each company with source URLs."
+  },
+  {
+    "id": "EVAL-03",
+    "category": "explanatory_architecture",
+    "query": "Explain the advantages and disadvantages of multi-agent architecture for customer support automation.",
+    "expected_behavior": "Breaks down architectural pros (specialization, modularity) vs cons (latency, token cost, orchestration failure points), with evidence citations."
+  },
+  {
+    "id": "EVAL-04",
+    "category": "sparse_conflicting_evidence",
+    "query": "Compare production benchmarks of experimental photonic quantum vector embedding processors in enterprise RAG systems.",
+    "expected_behavior": "Recognizes speculative or laboratory nature of photonic quantum vector hardware, flags High uncertainty or Low confidence, documents evidence gaps without hallucinating false benchmarks."
+  },
+  {
+    "id": "EVAL-05",
+    "category": "unanswerable_empty_fallback",
+    "query": "Query xyz999000nonexistent-token-for-empty-test-search-validation",
+    "expected_behavior": "Handles zero search results cleanly, assigns Low confidence, reports insufficient evidence warning, and refuses to fabricate false citations."
+  }
+]
